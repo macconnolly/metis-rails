@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Titan Roles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titan</th>
+      <th>Role</th>
+      <th>Started at</th>
+      <th>Ended at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @titan_roles.each do |titan_role| %>
+      <tr>
+        <td><%= titan_role.titan_id %></td>
+        <td><%= titan_role.role_id %></td>
+        <td><%= titan_role.started_at %></td>
+        <td><%= titan_role.ended_at %></td>
+        <td><%= link_to 'Show', titan_role %></td>
+        <td><%= link_to 'Edit', edit_titan_role_path(titan_role) %></td>
+        <td><%= link_to 'Destroy', titan_role, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Titan Role', new_titan_role_path %>

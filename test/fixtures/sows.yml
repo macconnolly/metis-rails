@@ -1,0 +1,47 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  A1_prop: MyString
+  A1_est: MyString
+  A2_prop: MyString
+  A2_est: MyString
+  SA_prop: MyString
+  SA_est: MyString
+  MGR_prop: MyString
+  MGR_est: MyString
+  MD_prop: MyString
+  MD_est: MyString
+  VP_prop: MyString
+  VP_est: MyString
+  PRES_prop: MyString
+  PRES_est: MyString
+  EXNET_prop: MyString
+  EXNET_est: MyString
+  OPS_prop: MyString
+  OPS_est: MyString
+  INT_prop: MyString
+  INT_est: MyString
+
+two:
+  project: two
+  A1_prop: MyString
+  A1_est: MyString
+  A2_prop: MyString
+  A2_est: MyString
+  SA_prop: MyString
+  SA_est: MyString
+  MGR_prop: MyString
+  MGR_est: MyString
+  MD_prop: MyString
+  MD_est: MyString
+  VP_prop: MyString
+  VP_est: MyString
+  PRES_prop: MyString
+  PRES_est: MyString
+  EXNET_prop: MyString
+  EXNET_est: MyString
+  OPS_prop: MyString
+  OPS_est: MyString
+  INT_prop: MyString
+  INT_est: MyString

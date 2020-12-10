@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Office:</strong>
+  <%= @titan.office_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @titan.name %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @titan.birthday %>
+</p>
+
+<p>
+  <strong>Hire date:</strong>
+  <%= @titan.hire_date %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @titan.phone %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @titan.address %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @titan.email %>
+</p>
+
+<%= link_to 'Edit', edit_titan_path(@titan) %> |
+<%= link_to 'Back', titans_path %>

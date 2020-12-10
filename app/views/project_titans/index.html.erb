@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Project Titans</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Titan</th>
+      <th>Name</th>
+      <th>Comments</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @project_titans.each do |project_titan| %>
+      <tr>
+        <td><%= project_titan.project_id %></td>
+        <td><%= project_titan.titan_id %></td>
+        <td><%= project_titan.name %></td>
+        <td><%= project_titan.comments %></td>
+        <td><%= link_to 'Show', project_titan %></td>
+        <td><%= link_to 'Edit', edit_project_titan_path(project_titan) %></td>
+        <td><%= link_to 'Destroy', project_titan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project Titan', new_project_titan_path %>

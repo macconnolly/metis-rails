@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @project_titan.project_id %>
+</p>
+
+<p>
+  <strong>Titan:</strong>
+  <%= @project_titan.titan_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project_titan.name %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @project_titan.comments %>
+</p>
+
+<%= link_to 'Edit', edit_project_titan_path(@project_titan) %> |
+<%= link_to 'Back', project_titans_path %>

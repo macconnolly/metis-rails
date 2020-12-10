@@ -1,0 +1,52 @@
+<%= form_with(model: titan, local: true) do |form| %>
+  <% if titan.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(titan.errors.count, "error") %> prohibited this titan from being saved:</h2>
+
+      <ul>
+        <% titan.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :office_id %>
+    <%= form.text_field :office_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthday %>
+    <%= form.date_select :birthday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hire_date %>
+    <%= form.date_select :hire_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

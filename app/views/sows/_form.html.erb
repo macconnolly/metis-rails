@@ -1,0 +1,122 @@
+<%= form_with(model: sow, local: true) do |form| %>
+  <% if sow.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(sow.errors.count, "error") %> prohibited this sow from being saved:</h2>
+
+      <ul>
+        <% sow.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :project_id %>
+    <%= form.text_field :project_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A1_prop %>
+    <%= form.text_field :A1_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A1_est %>
+    <%= form.text_field :A1_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A2_prop %>
+    <%= form.text_field :A2_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :A2_est %>
+    <%= form.text_field :A2_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :SA_prop %>
+    <%= form.text_field :SA_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :SA_est %>
+    <%= form.text_field :SA_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MGR_prop %>
+    <%= form.text_field :MGR_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MGR_est %>
+    <%= form.text_field :MGR_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MD_prop %>
+    <%= form.text_field :MD_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :MD_est %>
+    <%= form.text_field :MD_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :VP_prop %>
+    <%= form.text_field :VP_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :VP_est %>
+    <%= form.text_field :VP_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PRES_prop %>
+    <%= form.text_field :PRES_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PRES_est %>
+    <%= form.text_field :PRES_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :EXNET_prop %>
+    <%= form.text_field :EXNET_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :EXNET_est %>
+    <%= form.text_field :EXNET_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :OPS_prop %>
+    <%= form.text_field :OPS_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :OPS_est %>
+    <%= form.text_field :OPS_est %>
+  </div>
+
+  <div class="field">
+    <%= form.label :INT_prop %>
+    <%= form.text_field :INT_prop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :INT_est %>
+    <%= form.text_field :INT_est %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

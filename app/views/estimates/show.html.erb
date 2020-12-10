@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @estimate.project_id %>
+</p>
+
+<%= link_to 'Edit', edit_estimate_path(@estimate) %> |
+<%= link_to 'Back', estimates_path %>
