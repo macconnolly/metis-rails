@@ -20,12 +20,12 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: metis-projects.c7l51j6b7kxo.us-east-2.rds.amazonaws.com
-  post: 5432
-  username: metisstrategy
-  password: metisstrategy
-  database: metis-projects
-
+  # host: metis-projects.c7l51j6b7kxo.us-east-2.rds.amazonaws.com
+  # post: 5432
+  # username: metisstrategy
+  # password: metisstrategy
+  # database: metis-projects
+  url: postgres://lztitqqqwmgaos:aa2b43f4fdb26afb5be7ee96b2accdb535a2ad415abe3d0bc577b631866c5242@ec2-3-224-188-122.compute-1.amazonaws.com:5432/de7ktbf85b5l4e
 development:
   <<: *default
 
