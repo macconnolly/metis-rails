@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :estimates
-  mount RailsAdmin::Engine => '/', as: 'rails_admin'
-
-
   resources :projects
   resources :project_titans
   resources :titan_roles
